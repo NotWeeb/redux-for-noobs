@@ -32,6 +32,7 @@ export default Store
 `ExampleView.jsx`
 ```jsx
 import React from 'react'
+import Store from './Store'
 
 import { useSelector } from 'react-redux'
 import { simpleSelector } from 'redux-for-noobs'
