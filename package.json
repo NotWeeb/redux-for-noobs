@@ -30,5 +30,16 @@
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-typescript": "^7.7.7"
-  }
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NotWeeb/redux-for-noobs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NotWeeb/redux-for-noobs/issues"
+  },
+  "homepage": "https://github.com/NotWeeb/redux-for-noobs#readme"
 }
