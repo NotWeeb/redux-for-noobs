@@ -42,13 +42,13 @@ const ExampleView = () => {
 	const { testCount, setTestCount } = useSelector(simpleSelector)
 
 	return (
-    <Store>
-      count is {testCount}
+    		<Store>
+      			count is {testCount}
       
-      <button onClick={() => setTestCount(testCount + 1)}>
-        increment testCount by 1
-      </button>
-    </Store>
+			<button onClick={() => setTestCount(testCount + 1)}>
+				increment testCount by 1
+			</button>
+		</Store>
 	)
 }
 
