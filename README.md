@@ -1,8 +1,10 @@
 # redux-for-noobs
 A simplified store thing written by a noob for noobs.
 
+# Install
+`npm i redux-for-noobs`
 
-# How To
+# Usage
 
 `Store.jsx`
 ```jsx
