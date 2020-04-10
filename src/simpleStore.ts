@@ -35,7 +35,7 @@ const simpleStore = (defaultState: Object = {}, options: Array<OPTIONS> = []): S
     const reduxReducer = (state: Object = customState, reduxAction: Object|Action) => {
         // @ts-ignore
         const { name, value } = reduxAction
-        const action = state && state[name]
+        const action = state && (state[name] !== undefined && state[name] !== null)
         if (action) {
             state[name] = value
         }
