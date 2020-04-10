@@ -9,9 +9,7 @@ A simplified store thing written by a noob for noobs.
 `Store.jsx`
 ```jsx
 import React from 'react'
-import { Provider } from 'react-redux'
-
-import { simpleStore, OPTIONS } from 'redux-for-noobs'
+import { Provider, simpleStore, OPTIONS } from 'redux-for-noobs'
 
 const store = simpleStore({
   testCount: 0,
@@ -36,18 +34,17 @@ export default Store
 import React from 'react'
 import Store from './Store'
 
-import { useSelector } from 'react-redux'
-import { simpleSelector } from 'redux-for-noobs'
+import { useStore } from 'redux-for-noobs'
 
 
 const ExampleView = () => {
 
-	const { testCount, setTestCount } = useSelector(simpleSelector)
+	const { testCount, setTestCount } = useStore()
 
 	return (
-    		<Store>
-      			count is {testCount}
-      
+        <Store>
+            count is {testCount}
+  
 			<button onClick={() => setTestCount(testCount + 1)}>
 				increment testCount by 1
 			</button>

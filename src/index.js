@@ -1,9 +1,12 @@
-import simpleStore from "./simpleStore"
-import simpleSelector from "./simpleSelector"
-import OPTIONS from "./utils/OPTIONS"
+import useStore     from './useStore'
+import simpleStore  from './simpleStore'
+import OPTIONS      from './utils/OPTIONS'
+import { Provider } from 'react-redux'
+
 
 export {
-    OPTIONS,
-    simpleSelector,
-    simpleStore
+	Provider,
+	OPTIONS,
+	simpleStore,
+	useStore
 }
