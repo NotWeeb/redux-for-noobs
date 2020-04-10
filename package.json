@@ -1,6 +1,6 @@
 {
   "name": "redux-for-noobs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simplified store thing written by a noob for noobs.",
   "main": "./lib/index.js",
   "files": [
