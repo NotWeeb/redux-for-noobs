@@ -9,7 +9,7 @@ const ACTIVE_OPTIONS = []
 
 /**
  * @param defaultState {Object}
- * @param options {Array<OPTION>}
+ * @param options {Array<OPTIONS>}
  * @returns {Store<Object, Action>}
  */
 const simpleStore = (defaultState: Object = {}, options: Array<OPTIONS> = []): Store<Object, Action> => {
