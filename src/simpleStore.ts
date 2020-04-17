@@ -1,4 +1,4 @@
-import {Action, createStore, Store} from 'redux'
+import { Action, createStore, Store } from 'redux'
 import setState from "./utils/setState"
 import upperFirst from "./utils/upperFirst"
 import clean from "./utils/clean"
@@ -10,9 +10,10 @@ const ACTIVE_OPTIONS = []
 /**
  * @param defaultState {Object}
  * @param options {Array<OPTIONS>}
+ * @param middleware {*}
  * @returns {Store<Object, Action>}
  */
-const simpleStore = (defaultState: Object = {}, options: Array<OPTIONS> = []): Store<Object, Action> => {
+const simpleStore = (defaultState: Object = {}, options: Array<OPTIONS> = [], middleware = undefined): Store<Object, Action> => {
 
     if (typeof defaultState !== 'object') {
         throw new TypeError("'defaultState' must be an object with default values set or strings of 'any'.")
@@ -42,7 +43,7 @@ const simpleStore = (defaultState: Object = {}, options: Array<OPTIONS> = []): S
         return state
     }
 
-    const reduxStore = createStore(reduxReducer)
+    const reduxStore = createStore(reduxReducer, middleware)
 
     for (let rawName of states) {
         // @ts-ignore
