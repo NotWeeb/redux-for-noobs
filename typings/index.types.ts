@@ -11,7 +11,7 @@ declare module 'redux-for-noobs' {
   }
 
   function Provider()
-  function useStore(): object
+  function useStore(): any
   function simpleStore(defaultState: object, options: OPTIONS[], middleware: any): Store<Object, Action>
 
 
