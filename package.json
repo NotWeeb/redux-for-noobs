@@ -1,8 +1,9 @@
 {
   "name": "redux-for-noobs",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "A simplified store thing written by a noob for noobs.",
   "main": "./lib/index.js",
+  "typings": "./typings/index.types.ts",
   "files": [
     "lib",
     "src"
